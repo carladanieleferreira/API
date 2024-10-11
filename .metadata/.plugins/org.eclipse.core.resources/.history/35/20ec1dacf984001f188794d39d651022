@@ -1,0 +1,21 @@
+package br.com.serratec.entity;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Pagamento{
+	private Consulta consulta;
+	private Exame exame;
+	
+	
+	public Pagamento(Consulta consulta, Exame exame) {
+		this.consulta = consulta;
+		this.exame = exame;
+	}
+
+
+	public Double calcularProcedimento(Double valorExame, Double valorConsulta) {
+		return exame.calcularExame(valorExame) + consulta.calcularConsulta(valorConsulta);
+	}
+	
+}

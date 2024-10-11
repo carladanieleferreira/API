@@ -1,0 +1,13 @@
+package br.com.serratec;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Aula04ValidacaoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Aula04ValidacaoApplication.class, args);
+	}
+
+}

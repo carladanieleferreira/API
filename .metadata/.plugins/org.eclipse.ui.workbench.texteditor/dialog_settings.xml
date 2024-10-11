@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<item key="replaceBarOpen" value="true"/>
+	<list key="replacehistory">
+		<item value="Servico"/>
+		<item value="servicos"/>
+		<item value="m"/>
+		<item value="Manutencao"/>
+		<item value="manutencoes"/>
+		<item value="p"/>
+		<item value="proprietarios"/>
+		<item value="Proprietario"/>
+		<item value="veiculos"/>
+		<item value="Veiculo"/>
+	</list>
+	<list key="searchhistory">
+		<item value="Manutencao"/>
+		<item value="manutencoes"/>
+		<item value="p"/>
+		<item value="Proprietario"/>
+		<item value="proprietarios"/>
+		<item value="v"/>
+		<item value="veiculos"/>
+		<item value="Veiculo"/>
+		<item value="produtos"/>
+		<item value="Produto"/>
+	</list>
+</section>

@@ -1,0 +1,39 @@
+package br.com.serratec.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+//spring é programação funcional
+//ele é todo baseado em anotações
+//anotações são classes que simplificam
+//@AnotaçãoExemplo
+
+//todo controlador tem essas duas pra funcionar:
+
+@RestController //aceita requisições e respostas
+@RequestMapping("/exemplos") //função de criar o nome do recurso
+public class ExemploController {
+
+	@GetMapping
+	public String mensagem() {
+		return "Hello World!";
+	}
+	
+	@GetMapping("/texto") //pode ter um mesmo get se o caminho for outro, nesse caso adiciona "/texto" no URI do browser
+	public String texto() {
+		return "Serratec - API";
+	}
+	
+	@GetMapping("/converter") //localhost:8080/exemplos/converter?texto=Java
+	public String transformar(@RequestParam String texto) { //se usar o & ele separa http://localhost:8080/exemplos/converter?texto=abAB&texto=java&texto=logica
+		return texto.toUpperCase();
+	}
+	
+	@GetMapping("/converter2") //pode usar mais de um parametro só precisa especificar ex n1=1&n2=2 
+	public String transformar2(@RequestParam int n1, @RequestParam int n2) { http://localhost:8080/exemplos/converter2?n1=1&n2=2
+		return n1+" | "+n2 +" | "+n1+n2;
+	}
+	
+}

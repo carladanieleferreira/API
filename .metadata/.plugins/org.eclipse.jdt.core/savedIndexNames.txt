@@ -1,0 +1,9 @@
+INDEX VERSION 1.134+C:\Users\SERRATEC\Documents\Serratec\API\.metadata\.plugins\org.eclipse.jdt.core
+2760247401.index
+3056179662.index
+1077667513.index
+1865797976.index
+4005050449.index
+990210347.index
+3208062495.index
+2218862758.index

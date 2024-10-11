@@ -1,0 +1,11 @@
+package br.com.serratec.entity;
+
+public class Pagamento {
+
+	private Consulta consulta = new Consulta();
+	private Exame exame = new Exame();
+
+	public Double calcularProcedimento(Double valorExame, Double valorConsulta) {
+		return exame.calcularExame(valorExame) + consulta.calcularConsulta(valorConsulta);
+	}
+}

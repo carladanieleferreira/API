@@ -1,0 +1,23 @@
+package br.com.serratec.controller;
+
+import java.util.List;
+import java.util.ArrayList;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.serratec.entity.Cliente;
+
+@RestController
+@RequestMapping("/clientes")
+
+public class ClienteController {
+	private static List<Cliente> clientes = new ArrayList<>();
+	
+	static {
+		clientes.add(new Cliente(1,"Maria","m@gmail.com","Petropolis"));
+		clientes.add(new Cliente(2,"Igor","i@gmail.com","Petropolis"));
+		clientes.add(new Cliente(3,"Ana","a@gmail.com","Juiz de Fora"));
+	}
+
+}
